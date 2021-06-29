@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Watchlist Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="/">Spider Movie Lists</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="dropdown" id="select-box">
+                    <form class="d-flex my-3" >
+                        <input class="form-control me-2" id='searchInput' placeholder="Search" aria-label="Search">
+                        <button id="select" class="btn btn-outline-success" >Search</button>
+                    </form>
+                    <div id="optionText"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mt-3">
+        <div class="container popular-movies">
+            <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="movie-watchList-item">
+                        <div class="movie-watchList-content">
+                            <img alt="image1" class="img-fluid movie-watchList-image" src="assets/images/Screenshot%202021-04-25%20at%2010-37-00%20Godzilla%20vs%20Kong%20(2021).png" />
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="movie-watchList-item">
+                        <div class="movie-watchList-content">
+                            <img alt="image1" class="img-fluid movie-watchList-image" src="assets/images/Screenshot%202021-04-25%20at%2010-38-15%20Zack%20Snyder's%20Justice%20League%20(2021).png" />
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="movie-watchList-item">
+                        <div class="movie-watchList-content">
+                            <img alt="image1" class="img-fluid movie-watchList-image" src="assets/images/Screenshot%202021-04-25%20at%2010-36-34%20Fast%20Furious%209%20(2021).png" />
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="movie-watchList-item">
+                        <div class="movie-watchList-content">
+                            <img alt="image1" class="img-fluid movie-watchList-image" src="assets/images/Screenshot%202021-04-25%20at%2010-37-31%20Tenet%20(2020).png" />
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="container movie-container">
+            <div class="header">
+                <h3>Watchlist</h3>
+                <a href="pages/see_all.html?list=watchlist" class="btn btn-info">see all</a>
+            </div>
+            <div class="scrollmenu" id="watchlist">
+            </div>
+        </div>
+        <div class="container movie-container">
+            <div class="header">
+                <h3>Favourite</h3>
+                <a href="pages/see_all.html?list=favourites" class="btn btn-info">see all</a>
+            </div>
+            <div class="scrollmenu" id="favourites">
+                
+            </div>
+        </div>
+        <div class="container movie-container">
+            <div class="header">
+                <h3>Already Watched</h3>
+                <a href="pages/see_all.html?list=watched" class="btn btn-info">see all</a>
+            </div>
+            <div class="scrollmenu" id="watched">
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/watchlist.js"></script>
+    <script src="js/favourites.js"></script>
+    <script src="js/watched.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
